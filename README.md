@@ -45,6 +45,80 @@ Essa é uma oportunidade de descobrir novas ferramentas e conceitos essenciais, 
 
 Mais do que isso, esse é um evento para toda a comunidade evoluir junta.
 
+## Docker
+
+Steps to build the Docker image.
+
+### Build
+
+```bash
+docker image build -t <IMAGE_NAME> -f <PATH_DOCKERFILE> <PATH_CONTEXT_DOCKERFILE>
+docker image build -t <IMAGE_NAME> . (This context)
+```
+
+### Run
+
+Steps to run the container.
+
+* **Linux** running:
+
+```bash
+docker container run -d -p <LOCAL_PORT:CONTAINER_PORT> <IMAGE_NAME> <COMMAND>
+docker container run -it --rm --name <CONTAINER_NAME> -p <LOCAL_PORT:CONTAINER_PORT> <IMAGE_NAME> <COMMAND>
+```
+
+* **Windows** running:
+
+```
+winpty docker.exe container run -it --rm <IMAGE_NAME> <COMMAND>
+```
+
+### Exec
+
+Steps to enter inside the container.
+
+```bash
+docker exec -it <CONTAINER_NAME> <COMMAND>
+```
+
+### Cleaning
+
+Steps to clean your Docker environment. 
+
+```bash
+docker system prune -af
+```
+
+*  Stop all containers.
+
+```bash
+docker stop $(docker ps -aq)
+```
+
+*  Remove all containers.
+
+```bash
+docker rm $(docker ps -aq)
+```
+
+*  Remove all images.
+
+```bash
+docker rmi $(docker images -a)
+```
+
+*  Remove all volumes.
+
+```bash
+docker volume prune -f
+```
+
+*  Remove all network.
+
+```bash
+docker network prune -f
+```
+
 ## Built with
 
 - [NodeJS](https://nodejs.org/en/)
@@ -105,3 +179,8 @@ Hey!! If you like this project or if you find some bugs feel free to contact me 
 
 * 🚀 RocketSeat
 * 👨 Diego Fernandes.
+
+## Vscode Themes
+
+* Dracula.
+* Material Icon Theme.
