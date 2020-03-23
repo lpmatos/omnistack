@@ -79,7 +79,7 @@ Hey!! If you like this project or if you find some bugs feel free to contact me 
 
 ## Project Status
 
-* In production
+* 🔛 In production
 
 ## Acknowledgment
 
