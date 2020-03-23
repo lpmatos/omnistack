@@ -45,7 +45,41 @@ Essa é uma oportunidade de descobrir novas ferramentas e conceitos essenciais, 
 
 Mais do que isso, esse é um evento para toda a comunidade evoluir junta.
 
-## Docker
+## Desenvolvimento sem Docker
+
+### Usage
+
+In the directory, install the dependencies.
+
+```bash
+npm install
+```
+
+Start React development server.
+
+```bash
+npm start
+```
+
+Await for browser window open in http://localhost:3000.
+
+### Deployment
+
+In the directory, install the dependencies.
+
+```bash
+npm install
+```
+
+Execute build command to create minify version to production.
+
+```bash
+npm run build
+```
+
+Will be create folder /build with the files. Inserts into HTTP server. [More information](https://create-react-app.dev/docs/deployment/)
+
+## Desenvolvimento com Docker
 
 Steps to build the Docker image.
 
@@ -174,6 +208,10 @@ Hey!! If you like this project or if you find some bugs feel free to contact me 
 ## Project Status
 
 * 🔛 In production
+
+## Authors
+
+- [Lucca Pessoa](https://github.com/lpmato)
 
 ## Acknowledgment
 

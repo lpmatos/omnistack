@@ -14,7 +14,7 @@ ENV HOME=/usr/src/app
 
 WORKDIR ${HOME}
 
-COPY [ "./code", "." ]
+COPY [ "./code/backend", "." ]
 
 RUN node -v && \
     npm -v && \
