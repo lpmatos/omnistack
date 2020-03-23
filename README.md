@@ -23,6 +23,18 @@ To use this repository you need to make a **git clone**:
 git clone --depth 1 https://github.com/lpmatos/omnistack.git -b master
 ```
 
+## Pre-Requisites
+
+**Tools**
+:---:
+**NodeJS**
+**npm**
+**React**
+**React Native**
+**Expo**
+**Docker**
+**docker-compose**
+
 ## O que você vai aprender?
 
 Durante essa semana você vai descobrir na prática porque essas tecnologias fazem tanto sentido juntas, construindo uma aplicação completa com Node.js no back-end, ReactJS no front-end e React Native no mobile.
