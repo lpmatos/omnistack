@@ -33,6 +33,14 @@ Essa é uma oportunidade de descobrir novas ferramentas e conceitos essenciais, 
 
 Mais do que isso, esse é um evento para toda a comunidade evoluir junta.
 
+## Built with
+
+- [NodeJS](https://nodejs.org/en/)
+- [React](https://pt-br.reactjs.org/)
+- [React Native](https://reactnative.dev/)
+- [Docker](https://docs.docker.com/)
+- [Docker Compose](https://docs.docker.com/compose/)
+
 ## How to contribute
 
 1. Make a **Fork**.
