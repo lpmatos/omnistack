@@ -23,6 +23,16 @@ To use this repository you need to make a **git clone**:
 git clone --depth 1 https://github.com/lpmatos/omnistack.git -b master
 ```
 
+## O que você vai aprender?
+
+Durante essa semana você vai descobrir na prática porque essas tecnologias fazem tanto sentido juntas, construindo uma aplicação completa com Node.js no back-end, ReactJS no front-end e React Native no mobile.
+
+Você vai aprender como cada uma dessas tecnologias funcionam, como elas se integram, e os critérios para a escolha dessa stack. E finalmente vai entender como ela pode levar suas aplicações e a sua carreira para o próximo nível.
+
+Essa é uma oportunidade de descobrir novas ferramentas e conceitos essenciais, principalmente se você trabalha ou pretende trabalhar com desenvolvimento web e mobile.
+
+Mais do que isso, esse é um evento para toda a comunidade evoluir junta.
+
 ## How to contribute
 
 1. Make a **Fork**.
@@ -70,3 +80,8 @@ Hey!! If you like this project or if you find some bugs feel free to contact me 
 ## Project Status
 
 * In production
+
+## Acknowledgment
+
+* 🚀 RocketSeat
+* 👨 Diego Fernandes.
