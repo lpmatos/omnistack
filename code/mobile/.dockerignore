@@ -1,4 +1,0 @@
-# add git-ignore syntax here of things you don't want copied into docker image
-
-node_modules
-npm-debug.log
