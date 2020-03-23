@@ -18,7 +18,7 @@ COPY [ "./code/backend", "." ]
 
 RUN node -v && \
     npm -v && \
-    npm install
+    npm install express
 
 EXPOSE 8080
 
