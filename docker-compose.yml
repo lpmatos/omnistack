@@ -44,19 +44,8 @@ services:
     build:
       context: ./${PATH_DOCKERFILE_FRONTEND}
       dockerfile: Dockerfile
-    ports:
-      - target: 3000
-        published: 3000
-        protocol: tcp
-        mode: host
-    restart: unless-stopped
-    logging:
-      driver: "json-file"
-      options:
-        max-size: "500k"
-        max-file: "20"
-    networks:
-      - frontend
+    ports: 
+      - "3000:3000"
 
 # =============================================================================
 # NETWORK
@@ -64,4 +53,3 @@ services:
 
 networks:
   backend:
-  frontend:
