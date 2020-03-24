@@ -202,14 +202,15 @@ git push origin master
 
 Distributed under the MIT License. See [LICENSE](LICENSE) for more information.
 
-## Acknowledgment
+## Contacts
 
-* 🚀 RocketSeat - Diego Fernandes.
+Hey!! If you like this project or if you find some bugs feel free to contact me in my channels:
 
-## Vscode Themes
+* **Email**: luccapsm@gmail.com
+* **Linkedin**: www.linkedin.com/in/lucca-pessoa-4abb71138/
 
-* Dracula.
-* Material Icon Theme.
+[![Facebook](https://github.frapsoft.com/social/facebook.png)](https://www.facebook.com/lucca.pessoa.9)
+[![Github](https://github.frapsoft.com/social/github.png)](https://github.com/lpmatos)
 
 ## Contributors ✨
 
@@ -227,15 +228,14 @@ Distributed under the MIT License. See [LICENSE](LICENSE) for more information.
   <tr>
 </table>
 
-## Contacts
+## Acknowledgment
 
-Hey!! If you like this project or if you find some bugs feel free to contact me in my channels:
+* 🚀 RocketSeat - Diego Fernandes.
 
-* **Email**: luccapsm@gmail.com
-* **Linkedin**: www.linkedin.com/in/lucca-pessoa-4abb71138/
+## Vscode Themes
 
-[![Facebook](https://github.frapsoft.com/social/facebook.png)](https://www.facebook.com/lucca.pessoa.9)
-[![Github](https://github.frapsoft.com/social/github.png)](https://github.com/lpmatos)
+* Dracula.
+* Material Icon Theme.
 
 ## Project Status
 
