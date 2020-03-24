@@ -1,0 +1,67 @@
+# =============================================================================
+# BASE CONFIGURATION
+# =============================================================================
+
+version: "3.7"
+
+# =============================================================================
+# SERVICES
+# =============================================================================
+
+services:
+
+# =============================================================================
+# BACKEND
+# =============================================================================
+
+  backend:
+    container_name: ${CONTAINER_BACKEND_NAME}
+    env_file: ./.env
+    build:
+      context: ./${PATH_DOCKERFILE_BACKEND}
+      dockerfile: Dockerfile
+    ports:
+      - target: 3333
+        published: 3333
+        protocol: tcp
+        mode: host
+    restart: unless-stopped
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "500k"
+        max-file: "20"
+    networks:
+      - backend
+
+# =============================================================================
+# FRONTEND
+# =============================================================================
+
+  frontend:
+    container_name: ${CONTAINER_FRONTEND_NAME}
+    env_file: ./.env
+    build:
+      context: ./${PATH_DOCKERFILE_FRONTEND}
+      dockerfile: Dockerfile
+    ports:
+      - target: 3000
+        published: 3000
+        protocol: tcp
+        mode: host
+    restart: unless-stopped
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "500k"
+        max-file: "20"
+    networks:
+      - frontend
+
+# =============================================================================
+# NETWORK
+# =============================================================================
+
+networks:
+  backend:
+  frontend:
