@@ -1,7 +1,7 @@
 Semana Omnistack
 ============
 
-[![Open Source](https://badges.frapsoft.com/os/v1/open-source.svg?v=102)](https://github.com/lpmatos) [![Contributors](https://img.shields.io/github/contributors/lpmatos/omnistack)](https://github.com/lpmatos/omnistack/graphs/contributors) [![MIT License](https://img.shields.io/github/license/lpmatos/omnistack)](https://github.com/lpmatos/omnistack/blob/master/LICENSE)
+[![Open Source](https://badges.frapsoft.com/os/v1/open-source.svg?v=102)](https://github.com/lpmatos/omnistack) [![Contributors](https://img.shields.io/github/contributors/lpmatos/omnistack)](https://github.com/lpmatos/omnistack/graphs/contributors) [![MIT License](https://img.shields.io/github/license/lpmatos/omnistack)](https://github.com/lpmatos/omnistack/blob/master/LICENSE) [![Languages](https://img.shields.io/github/languages/count/lpmatos/omnistack)](https://github.com/lpmatos/omnistack) [![Top Language](https://img.shields.io/github/languages/top/lpmatos/omnistack)](https://github.com/lpmatos/omnistack)
 
 <p align="center">
   <img src="/docs/images/INFO.jpg" width="500px" float="center"/>
