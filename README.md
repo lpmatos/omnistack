@@ -1,14 +1,14 @@
 Semana Omnistack
 ============
 
-[![Open Source](https://badges.frapsoft.com/os/v1/open-source.svg?v=102)](https://github.com/lpmatos/omnistack) [![Contributors](https://img.shields.io/github/contributors/lpmatos/omnistack)](https://github.com/lpmatos/omnistack/graphs/contributors) [![MIT License](https://img.shields.io/github/license/lpmatos/omnistack)](https://github.com/lpmatos/omnistack/blob/master/LICENSE) [![Languages](https://img.shields.io/github/languages/count/lpmatos/omnistack)](https://github.com/lpmatos/omnistack) [![Top Language](https://img.shields.io/github/languages/top/lpmatos/omnistack)](https://github.com/lpmatos/omnistack)
+[![Open Source](https://badges.frapsoft.com/os/v1/open-source.svg?v=102)](https://github.com/lpmatos/omnistack) [![Contributors](https://img.shields.io/github/contributors/lpmatos/omnistack)](https://github.com/lpmatos/omnistack/graphs/contributors) [![MIT License](https://img.shields.io/github/license/lpmatos/omnistack)](https://github.com/lpmatos/omnistack/blob/master/LICENSE) [![Languages](https://img.shields.io/github/languages/count/lpmatos/omnistack)](https://github.com/lpmatos/omnistack) [![Top Language](https://img.shields.io/github/languages/top/lpmatos/omnistack)](https://github.com/lpmatos/omnistack) [![GitHub fork](https://img.shields.io/github/forks/lpmatos/omnistack?style=social)](https://github.com/lpmatos/omnistack/network/members) [![GitHub stars](https://img.shields.io/github/stars/lpmatos/omnistack?style=social)](https://github.com/lpmatos/omnistack/stargazers) [![GitHub watchers](https://img.shields.io/github/watchers/lpmatos/omnistack?style=social)](https://github.com/lpmatos/omnistack/watchers)
 
 <p align="center">
   <img src="/docs/images/INFO.jpg" width="500px" float="center"/>
 </p>
 <h1 align="center">🚀 RocketSeat 🚀</h1>
 <p align="center">
-  <strong>Projetos realizados durante a semana Omnistack</strong>
+  <strong>Projetos de Backend, Frontend e Mobile realizados durante a semana Omnistack</strong>
 </p>
 
 ## Copyright (c)
