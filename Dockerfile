@@ -16,12 +16,12 @@ WORKDIR ${HOME}
 
 COPY [ "./code/backend", "." ]
 
-RUN node -v && \
-    npm -v && \
-    npm install express
+RUN set -ex && apk update
 
-EXPOSE 8080
+RUN npm install express
+
+EXPOSE 3000
 
 ENTRYPOINT []
 
-CMD [ "node", "server.js" ]
+CMD [ "node", "index.js" ]
