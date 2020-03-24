@@ -14,4 +14,10 @@ All important changes to this project will be added to this file! This changelog
 * Dockerfile to backend with NodeJS and Express.
 * Dockerfile to frontend with React,
 * Docker-compose with backend and frontend.
-dock
+
+## 1.0.1
+
+### Added
+
+* Custom views in README.md about the project.
+* LICENSE MIT file.

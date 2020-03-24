@@ -194,49 +194,24 @@ git commit -m "Added - Fixing somethings"
 git push origin master
 ```
 
-## Contacts
-
-Hey!! If you like this project or if you find some bugs feel free to contact me in my channels:
-
----
-
-* **Email**: luccapsm@gmail.com
-* **Linkedin**: www.linkedin.com/in/lucca-pessoa-4abb71138/
-
----
-
-[![Facebook](https://github.frapsoft.com/social/facebook.png)](https://www.facebook.com/lucca.pessoa.9)
-[![Github](https://github.frapsoft.com/social/github.png)](https://github.com/lpmatos)
-
 ## Versioning
 
 - [CHANGELOG](CHANGELOG.md)
 
-## Project Status
+## License
 
-* 🔛 In production
-
-## Authors
-
-- [Lucca Pessoa](https://github.com/lpmato)
+Distributed under the MIT License. See [LICENSE](LICENSE) for more information.
 
 ## Acknowledgment
 
-* 🚀 RocketSeat
-* 👨 Diego Fernandes.
+* 🚀 RocketSeat - Diego Fernandes.
 
 ## Vscode Themes
 
 * Dracula.
 * Material Icon Theme.
 
-<!-- LICENSE-->
-
-## License
-
-Distributed under the MIT License. See [LICENSE](LICENSE) for more information.
-
-## Contributors
+## Contributors ✨
 
 <table>
   <tr>
@@ -251,3 +226,17 @@ Distributed under the MIT License. See [LICENSE](LICENSE) for more information.
     <td align="center"><a href="https://github.com/lpmatos"><img src="https://avatars2.githubusercontent.com/u/58797390?s=400&v=4" width="100px;" alt=""/><br /><sub><b>Lucca Pessoa</b></sub></a><br /><a href="https://github.com/lpmatos/omnistack/commits?author=lpmatos" title="Code">💻</a> <a href="#lpmatos" title="Design">🎨</a></td>
   <tr>
 </table>
+
+## Contacts
+
+Hey!! If you like this project or if you find some bugs feel free to contact me in my channels:
+
+* **Email**: luccapsm@gmail.com
+* **Linkedin**: www.linkedin.com/in/lucca-pessoa-4abb71138/
+
+[![Facebook](https://github.frapsoft.com/social/facebook.png)](https://www.facebook.com/lucca.pessoa.9)
+[![Github](https://github.frapsoft.com/social/github.png)](https://github.com/lpmatos)
+
+## Project Status
+
+* 🔛 In production
