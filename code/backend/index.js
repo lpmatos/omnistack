@@ -4,6 +4,10 @@ const express = require("express");
 // Call express module.
 const app = express();
 
+// Constants
+const PORT = 3333;
+const HOST = "0.0.0.0";
+
 // Create routes.
 app.get("/", (request, response) => {
     array = Array()
@@ -22,4 +26,5 @@ app.get("/", (request, response) => {
 });
 
 // Start server in port 3000
-app.listen(3000);
+app.listen(PORT, HOST);
+console.log("Running...");

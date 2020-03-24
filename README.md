@@ -37,6 +37,10 @@ git clone --depth 1 https://github.com/lpmatos/omnistack.git -b master
 
 ## O que você vai aprender?
 
+WALLPAPER
+
+![Alt text](docs/images/WALLPAPER.jpg?raw=true "Project")
+
 Durante essa semana você vai descobrir na prática porque essas tecnologias fazem tanto sentido juntas, construindo uma aplicação completa com Node.js no back-end, ReactJS no front-end e React Native no mobile.
 
 Você vai aprender como cada uma dessas tecnologias funcionam, como elas se integram, e os critérios para a escolha dessa stack. E finalmente vai entender como ela pode levar suas aplicações e a sua carreira para o próximo nível.
