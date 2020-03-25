@@ -52,6 +52,10 @@ Essa é uma oportunidade de descobrir novas ferramentas e conceitos essenciais, 
 
 Mais do que isso, esse é um evento para toda a comunidade evoluir junta.
 
+## Arquitetura
+
+![Alt text](docs/images/TWO.png?raw=true "Project")
+
 ## Desenvolvimento sem Docker
 
 ### Usage
