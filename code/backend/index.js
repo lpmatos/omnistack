@@ -27,6 +27,36 @@ app.get("/", (request, response) => {
     });
 });
 
+// Create routes.
+app.get("/users", (request, response) => {
+    array = [
+        {
+            nome: "Lucca Pessoa",
+            idade: 21
+        },
+        {
+            nome: "Vitor Gabriel",
+            idade: 10
+        },
+        {
+            nome: "Sheyla Augusta",
+            idade: 40
+        },
+        {
+            nome: "Luiz Pereira",
+            idade: 34
+        },
+        {
+            nome: "Karol Mendonça",
+            idade: 3
+        },
+    ];
+    return response.json(
+        array
+    );
+});
+
 // Start server in port 3000
 app.listen(PORT, HOST);
+
 console.log("Running...");
