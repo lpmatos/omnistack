@@ -1,4 +1,6 @@
 // Express module.
+// O Express é um microframework - Possui pouquíssimas funcionalidades.
+// Ajuda a dar um start na aplicação. 
 const express = require("express");
 
 // Call express module.
