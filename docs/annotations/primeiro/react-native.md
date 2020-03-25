@@ -39,3 +39,5 @@ Com isso, não precisamos nos preocupar em gerar o aplicativo para Android e IOS
 Nos precoupamos apenas em desenvolver em React e React Native, só vamos enviar código JavaScript.
 
 Ao invés de gerar o aplicativo (apk, ipa) pelo nosso projeto, vamos utilizar o aplicativo mobile do Expo. O Expo irá realizar isso.
+
+O Expo é extramamente recomendado para o desenvolvimento de aplicações pequenas e que você tem um bom entendimento sobre o escopo.
