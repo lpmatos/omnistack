@@ -1,4 +1,6 @@
-# Installing Chocolatey
+# Semana Omnistack - Primeiro dia
+
+## Installing Chocolatey
 
 Chocolatey installs in seconds. You are just a few steps from running choco right now!
 
