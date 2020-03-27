@@ -1,0 +1,106 @@
+apiVersion: apps/v1
+kind: StatefulSet
+metadata:
+  name: {{ .Values.mysql.name }}
+  namespace: {{ .Release.Namespace }}
+  labels:
+    app: {{ .Values.mysql.name }}
+    chart: "{{ .Chart.Name }}-{{ .Chart.Version }}"
+    release: "{{ .Release.Name }}"
+    heritage: "{{ .Release.Service }}"
+spec:
+  serviceName: {{ .Values.mysql.name }}
+  replicas: 1
+  selector:
+    matchLabels:
+      app: {{ .Values.mysql.name }}
+      release: {{ .Release.Name }}
+  template:
+    metadata:
+      labels:
+        app: {{ .Values.mysql.name }}
+        release: {{ .Release.Name }}
+    spec:
+      initContainers:
+        - name: init-db
+          image: "{{ .Values.mysql.busybox.image }}:{{ .Values.mysql.busybox.tag }}"
+          imagePullPolicy: {{ .Values.mysql.image.pullPolicy | quote }}
+          command: ["sh", "-c", "chown -Rf 999:999 /var/lib/mysql"]
+          resources:
+            requests:
+              memory: {{ .Values.mysql.initContainer.resources.requests.memory }}
+              cpu: {{ .Values.mysql.initContainer.resources.requests.cpu }}  
+          volumeMounts:
+            - name: {{ .Values.mysql.name }}
+              mountPath: /var/lib/mysql
+              subPath: mysql
+      containers:
+      - image: {{ include "mysql.image" . }}
+        resources:
+          limits:
+            memory: {{ .Values.mysql.resources.limits.memory }} 
+            cpu: {{ .Values.mysql.resources.limits.cpu }}
+          requests:
+            memory: {{ .Values.mysql.resources.requests.memory }}
+            cpu: {{ .Values.mysql.resources.requests.cpu }}  
+        name: {{ .Values.mysql.name }}
+        env:
+          {{- if .Values.mysql.mysqlAllowEmptyPassword }}
+          - name: MYSQL_ALLOW_EMPTY_PASSWORD
+            value: "true"
+          {{- end }}
+          {{- if not (and .Values.mysql.allowEmptyRootPassword (not .Values.mysql.root.password)) }}
+          - name: MYSQL_ROOT_PASSWORD
+            valueFrom:
+              secretKeyRef:
+                name: {{ include "mysql.secret.name" . }}
+                key: mysql-root-password
+                {{- if .Values.mysql.mysqlAllowEmptyPassword }}
+                optional: true
+                {{- end }}
+          {{- end }}
+          {{- if .Values.mysql.db.user }}
+          - name: MYSQL_USER
+            value: {{ default "" .Values.mysql.db.user | quote }}
+          {{- if not (and .Values.mysql.allowEmptyRootPassword (not .Values.mysql.db.password)) }}
+          - name: MYSQL_PASSWORD
+            valueFrom:
+              secretKeyRef:
+                name: {{ include "mysql.secret.name" . }}
+                key: mysql-password
+                {{- if or .Values.mysql.allowEmptyRootPassword (empty .Values.mysql.db.user ) }}
+                optional: true
+                {{- end }}
+          {{- end }}
+          {{- end }}
+          - name: MYSQL_DATABASE
+            value: {{ default "" .Values.mysql.db.name | quote }}
+          {{ include "mysql.envs" . | nindent 10 }}
+        args:
+          - --max_allowed_packet=32505856
+          - --wait_timeout=300
+          - --max_connections=1000
+          - --character-set-server=utf8
+          - --collation-server=utf8_unicode_ci 
+          - --skip-character-set-client-handshake
+        imagePullPolicy: {{ .Values.mysql.image.pullPolicy }}
+        ports:
+        - containerPort: 3306
+        volumeMounts:
+          - name: {{ .Values.mysql.name }}
+            mountPath: /var/lib/mysql
+            subPath: mysql
+          {{- if .Values.mysql.initializationFiles }}
+          - name: migrations
+            mountPath: /docker-entrypoint-initdb.d
+          {{- end }}
+      volumes:
+        - name: {{ .Values.mysql.name }}
+          persistentVolumeClaim:
+            claimName: pvc-vol-{{ .Values.mysql.name }}
+        {{- if .Values.mysql.initializationFiles }}
+        - name: migrations
+          configMap:
+            name: {{ .Values.mysql.name }}-initialization
+        {{- end }}
+---

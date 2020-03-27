@@ -1,0 +1,37 @@
+apiVersion: networking.k8s.io/v1beta1
+kind: Ingress
+metadata:
+  name: "ingress"
+  namespace: {{ .Release.Namespace }}
+  annotations:
+    {{- range $KEY, $VALEY := .Values.ingress.annotations }}
+      {{ $KEY }}: {{ $VALEY | quote }}
+    {{- end }}
+spec:
+  rules:
+  {{- if (and (.Values.ingress.enable) (not (empty .Values.ingress.host))) }}
+  - host: {{ .Values.ingress.host }}
+    http:
+      paths:
+      - path: {{ .Values.ingress.backend.path }}
+        backend:
+          serviceName: {{ include "backend.metadata.name" . }}
+          servicePort: {{ .Values.deployment.backend.serviceport }}
+      - path: {{ .Values.ingress.frontend.path }}
+        backend:
+          serviceName: {{ include "frontend.metadata.name" . }}
+          servicePort: {{ .Values.deployment.frontend.serviceport }}
+  {{- else }}
+  - host: {{ include "default.ingress.host" . }}
+    http:
+      paths:
+      - path: {{ .Values.ingress.backend.path }}
+        backend:
+          serviceName: {{ include "backend.metadata.name" . }}
+          servicePort: {{ .Values.deployment.backend.serviceport }}
+      - path: {{ .Values.ingress.frontend.path }}
+        backend:
+          serviceName: {{ include "frontend.metadata.name" . }}
+          servicePort: {{ .Values.deployment.frontend.serviceport }}
+  {{- end }}
+---

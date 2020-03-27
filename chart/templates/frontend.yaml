@@ -1,0 +1,70 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: {{ include "frontend.metadata.name" . }}
+  namespace: {{ .Release.Namespace }}
+  labels:
+    app: {{ include "frontend.metadata.name" . }}
+    chart: "{{ .Chart.Name }}-{{ .Chart.Version }}"
+    release: "{{ .Release.Name }}"
+    heritage: "{{ .Release.Service }}"
+spec:
+  replicas: {{ .Values.global.replicaCount }}
+  {{- if .Values.strategy.enable }}
+  strategy:
+    {{ include "replicas.strategy.definition" . | nindent 4 }}
+  {{- else }}
+  strategy:
+    type: Recreate
+    rollingUpdate: null
+  {{- end }}
+  selector:
+    matchLabels:
+      app: {{ include "frontend.metadata.name" . }}
+      release: "{{ .Release.Name }}"
+  template:
+    metadata:
+      labels:
+        app: {{ include "frontend.metadata.name" . }}
+        release: "{{ .Release.Name }}"
+    spec:
+      containers:
+      - name: {{ include "frontend.metadata.name" . }}
+        image: {{ include "frontend.image" . }}
+        env:
+          {{ include "frontend.envs" . | nindent 10 }}
+        resources:
+          {{ include "default.resources.definition" . | nindent 10 }}
+        ports:
+        - containerPort: {{ .Values.deployment.frontend.containerport }}
+        livenessProbe:
+        {{- if .Values.liveness.enable }}
+          initialDelaySeconds: {{ .Values.liveness.initialDelaySeconds }}
+          periodSeconds: {{ .Values.liveness.periodSeconds }}
+          timeoutSeconds: {{ .Values.liveness.timeoutSeconds }}
+          successThreshold: {{ .Values.liveness.successThreshold }}
+          failureThreshold: {{ .Values.liveness.failureThreshold }}
+          httpGet:
+            path: {{ .Values.ingress.frontend.path }}
+            port: {{ .Values.deployment.frontend.containerport }}
+            {{- if .Values.healthcheckHttp }}
+            scheme: HTTP
+            {{- end }}
+        {{- end }}
+        readinessProbe:
+        {{- if .Values.readiness.enable }}
+          initialDelaySeconds: {{ .Values.readiness.initialDelaySeconds }}
+          periodSeconds: {{ .Values.readiness.periodSeconds }}
+          timeoutSeconds: {{ .Values.readiness.timeoutSeconds }}
+          successThreshold: {{ .Values.readiness.successThreshold }}
+          failureThreshold: {{ .Values.readiness.failureThreshold }}
+          httpGet:
+            path: {{ .Values.ingress.frontend.path }}
+            port: {{ .Values.deployment.frontend.containerport }}
+            {{- if .Values.healthcheckHttp }}
+            scheme: HTTP
+            {{- end }}
+        {{- end }}
+      imagePullSecrets:
+        - name: {{ .Values.global.imagePullSecrets }}
+---

@@ -1,0 +1,69 @@
+
+Helm debug dry-run was successful.
+
+Thank you for install Be the Hero Chart!
+
+{{- if .Values.ingress.host }}
+
+Your Custom ingress information is:
+
+- Custom ingress host: {{ include "notes.custom.ingress.host" . }}
+
+- Custom Backend URL: {{ include "notes.custom.ingress.host" . }}{{ .Values.ingress.backend.path }}
+- Custom Frontend URL: {{ include "notes.custom.ingress.host" . }}{{ .Values.ingress.frontend.path }}
+
+{{- else }}
+
+Your Default ingress information is:
+
+- Default ingress host: http://{{ include "default.ingress.host" . }}
+
+- Default Backend URL: http://{{ include "default.ingress.host" . }}{{ .Values.ingress.backend.path }}
+- Default Frontend URL: http://{{ include "default.ingress.host" . }}{{ .Values.ingress.frontend.path }}
+{{- end }}
+
+Deployments Names:
+
+    - Backend: {{ include "backend.metadata.name" . }}
+    - Database: {{ .Values.mysql.name }}
+    - Frontend: {{ include "frontend.metadata.name" . }}
+{{- if .Values.flyway.enable }}
+    - Flyway: {{ .Values.flyway.name }}
+{{- end }}
+
+MySQL can be accessed via port 3306 on the following DNS name from within your cluster: {{ .Values.mysql.name }}.{{ .Release.Namespace }}.svc.cluster.local
+
+To get your root password run:
+
+    MYSQL_ROOT_PASSWORD=$(kubectl get secret --namespace {{ .Release.Namespace }} {{ include "mysql.secret.name" . }} -o jsonpath="{.data.mysql-root-password}" | base64 --decode; echo)
+
+To connect to your database:
+
+1. Run an Ubuntu pod that you can use as a client:
+
+    kubectl run -i --tty ubuntu --image=ubuntu:16.04 --restart=Never -- bash -il
+
+2. Install the mysql client:
+
+    $ apt-get update && apt-get install mysql-client -y
+
+3. Connect using the mysql cli, then provide your password:
+    $ mysql -h {{ .Values.mysql.name }} -p
+
+To connect to your database directly from outside the K8s cluster:
+    {{- if contains "NodePort" .Values.mysql.service.type }}
+
+    MYSQL_HOST=$(kubectl get nodes --namespace {{ .Release.Namespace }} -o jsonpath='{.items[0].status.addresses[0].address}')
+    MYSQL_PORT=$(kubectl get svc --namespace {{ .Release.Namespace }} {{ .Values.mysql.name }} -o jsonpath='{.spec.ports[0].nodePort}')
+
+    {{- else if contains "ClusterIP" .Values.mysql.service.type }}
+    MYSQL_HOST=127.0.0.1
+    MYSQL_PORT={{ .Values.mysql.service.port }}
+
+    # Execute the following command to route the connection:
+    kubectl port-forward svc/{{ .Values.mysql.name }} {{ .Values.mysql.service.port }}
+
+    {{- end }}
+
+    mysql -h ${MYSQL_HOST} -P${MYSQL_PORT} -u root -p${MYSQL_ROOT_PASSWORD}
+    

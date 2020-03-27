@@ -49,6 +49,13 @@ services:
     restart: unless-stopped
     ports: 
       - "3000:3000"
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "500k"
+        max-file: "20"
+    networks:
+      - frontend
 
 # =============================================================================
 # NETWORK
@@ -56,3 +63,4 @@ services:
 
 networks:
   backend:
+  frontend:

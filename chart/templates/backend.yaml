@@ -1,0 +1,42 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: {{ include "backend.metadata.name" . }}
+  namespace: {{ .Release.Namespace }}
+  labels:
+    app: {{ include "backend.metadata.name" . }}
+    chart: "{{ .Chart.Name }}-{{ .Chart.Version }}"
+    release: "{{ .Release.Name }}"
+    heritage: "{{ .Release.Service }}"
+spec:
+  replicas: {{ .Values.global.replicaCount }}
+  {{- if .Values.strategy.enable }}
+  strategy:
+    {{ include "replicas.strategy.definition" . | nindent 4 }}
+  {{- else }}
+  strategy:
+    type: Recreate
+    rollingUpdate: null
+  {{- end }}
+  selector:
+    matchLabels:
+      app: {{ include "backend.metadata.name" . }}
+      release: {{ .Release.Name }}
+  template:
+    metadata:
+      labels:
+        app: {{ include "backend.metadata.name" . }}
+        release: {{ .Release.Name }}
+    spec:
+      containers:
+      - name: {{ include "backend.metadata.name" . }}
+        image: {{ include "backend.image" . }}
+        env:
+          {{ include "backend.envs" . | nindent 10 }}
+        resources:
+          {{ include "default.resources.definition" . | nindent 10 }}
+        ports:
+        - containerPort: {{ .Values.deployment.backend.containerport }}
+      imagePullSecrets:
+        - name: {{ .Values.global.imagePullSecrets }}
+---
