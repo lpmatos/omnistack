@@ -1,17 +1,20 @@
 // Mapping Routes
 
-// Call express module
 const express = require("express");
 
 // Getting Controllers
 const OngController = require("../controllers/OngController");
+const IncidentController = require("../controllers/IncidentController");
 
-// Create routes const
 const routes = express.Router();
 
-// Routes
+// Routes - Ongs
 routes.get("/ongs", OngController.index);
 routes.post("/ongs", OngController.create);
 
-// Export routes variable - to export a variable that is inside a file.
+// Routes - Incidents
+routes.get("/incidents", IncidentController.index);
+routes.post("/incidents", IncidentController.create);
+routes.delete("/incidents/:id", IncidentController.delete);
+
 module.exports = routes;

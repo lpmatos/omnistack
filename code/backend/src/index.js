@@ -1,12 +1,11 @@
 const express = require("express");
-
-// Precisamos passar com o ponto barra para o NodeJS não entender essa referência como um módulo, e sim como um caminho.
+const port = 3333;
 const routes = require("./routes/routes");
 
 const app = express();
 app.use(express.json());
 app.use(routes);
 
-app.listen(3333);
+app.listen(port);
 
-console.log("Running Server...")
+console.log("Running Server...");
