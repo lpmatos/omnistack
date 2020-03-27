@@ -20,6 +20,7 @@ RUN set -ex && apk update
 
 RUN npm install
 
+HEALTHCHECK --interval=1m --timeout=2m CMD curl 0.0.0.0:3333/healthcheck
 
 EXPOSE 3333
 
