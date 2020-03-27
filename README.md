@@ -174,7 +174,7 @@ docker volume prune -f
 docker network prune -f
 ```
 
-## :rocket Built with
+## :rocket: Built with - Technologies
 
 Esse projeto foi desenvolvido com as seguintes tecnologias:
 
