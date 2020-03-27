@@ -38,6 +38,8 @@ O Query Builder que estaremos utilizando é o knex. Ele funciona para:
 * MariaDB
 * MSSQL
 
+## Knex
+
 Para instalar o knex executamos:
 
 ```bash
