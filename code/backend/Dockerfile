@@ -20,8 +20,9 @@ RUN set -ex && apk update
 
 RUN npm install
 
+
 EXPOSE 3333
 
 ENTRYPOINT []
 
-CMD [ "node", "index.js" ]
+CMD [ "npm", "start" ]
