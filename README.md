@@ -11,6 +11,13 @@ Semana Omnistack
   <strong>Projetos de Backend, Frontend e Mobile realizados durante a semana Omnistack</strong>
 </p>
 
+<p align="center">
+  <a href="#rocket-built-with">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-projeto">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-how-to-contribute">Como contribuir</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#license">Licença</a>
+</p>
+
 ## Copyright (c)
 
 Lucca Pessoa da Silva Matos (c) 2020 - **GitHub Repository**
@@ -27,6 +34,9 @@ Pull requests are welcome. If you'd like to support the work and buy me a ☕, I
 
 <a href="https://www.buymeacoffee.com/EatdMck" target="_blank"><img src="https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png" alt="Buy Me A Coffee" style="height: 41px !important;width: 100px !important;box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;-webkit-box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;" ></a>
 
+## 💻 Projeto
+
+O **Be The Hero** é um projeto que visa conectar pessoas interessadas em ajudar ongs e ongs com campanhas abertas.
 
 ## Pre-Requisites
 
@@ -164,13 +174,27 @@ docker volume prune -f
 docker network prune -f
 ```
 
-## Built with
+## :rocket Built with
+
+Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 - [NodeJS](https://nodejs.org/en/)
-- [React](https://pt-br.reactjs.org/)
-- [React Native](https://reactnative.dev/)
+- [React](https://reactjs.org)
+- [React Native](https://facebook.github.io/react-native/)
+- [Expo](https://expo.io/)
 - [Docker](https://docs.docker.com/)
 - [Docker Compose](https://docs.docker.com/compose/)
+
+Extras:
+
+- Main Libs
+  - [Express](https://expressjs.com/pt-br/)
+  - [KnexJS](http://knexjs.org/)
+  - [Toast Notification](https://github.com/jossmac/react-toast-notifications)
+- Estilos
+  - [EditorConfig](https://editorconfig.org/)
+  - [ESLint](https://eslint.org/)
+  - [Prettier](https://prettier.io/)
 
 ## How to contribute
 
@@ -251,3 +275,7 @@ Hey!! If you like this project or if you find some bugs feel free to contact me 
 ## Project Status
 
 * 🔛 In production
+
+---
+
+Feito com ❤️ by **Rocketseat**
