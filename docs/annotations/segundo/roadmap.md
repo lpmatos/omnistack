@@ -2,7 +2,7 @@
 
 ## Roadmap para o segundo dia da Semana Omnistack
 
-* NodeJS e Express.
+* NodeJS e Express:
     * Rotas e Recursos.
     * Métodos HTTP.
     * Tipos de parâmetros.

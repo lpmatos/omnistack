@@ -3,7 +3,6 @@
   max-width: 1120px;
   height: 100vh;
   margin: 0 auto;
-
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -16,7 +15,7 @@
 }
 
 .logon-container section.form form {
-  margin-top: 100px;
+  margin-top: 80px;
 }
 
 .logon-container section.form form h1 {
