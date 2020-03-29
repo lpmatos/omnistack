@@ -1,8 +1,8 @@
-const express = require("express");
 const cors = require("cors");
-const port = 3333;
+const express = require("express");
 const routes = require("./routes/routes");
-
+const config = require("./settings/config");
+const port = parseInt(config.NODE_PORT);
 const app = express();
 
 app.use(cors());
@@ -11,4 +11,4 @@ app.use(routes);
 
 app.listen(port);
 
-console.log("Running Server...");
+console.log(`Server Running on ${port}...`);

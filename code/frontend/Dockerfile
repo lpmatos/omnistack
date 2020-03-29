@@ -9,7 +9,7 @@ LABEL maintainer="Lucca Pessoa da Silva Matos - luccapsm@gmail.com" \
         org.label-schema.node="https://nodejs.org/en/" \
         org.label-schema.react="https://pt-br.reactjs.org/" \
         org.label-schema.npm="https://www.npmjs.com/" \
-        org.label-schema.name="Semena Omnistack Dockerfile Backend" 
+        org.label-schema.name="Semana Omnistack Dockerfile Backend" 
 
 ENV HOME=/app
 
@@ -17,7 +17,7 @@ COPY [ ".", "/app" ]
 
 WORKDIR ${HOME}
 
-RUN npm i
+RUN npm install
 
 EXPOSE 3000
 

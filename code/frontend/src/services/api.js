@@ -1,7 +1,8 @@
 import axios from "axios"
+import { config } from "../settings/config";
 
 const api = axios.create({
-    baseURL: "http://localhost:3333"
+  baseURL: config.ENDPOINT_BACKEND
 });
 
 export default api;
