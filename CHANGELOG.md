@@ -21,3 +21,11 @@ All important changes to this project will be added to this file! This changelog
 
 * Custom views in README.md about the project.
 * LICENSE MIT file.
+
+## 1.1.0
+
+### Added
+
+* MySQL in Docker-compose.
+* New documentation about Docker and Docker-compose.
+* Some custom views in README.md.

@@ -169,6 +169,8 @@ Will be create folder /build with the files. Inserts into HTTP server. [More inf
 
 ## 🐋 Development with Docker
 
+![Alt text](docs/images/DOCKER.png?raw=true "Docker")
+
 Steps to build the Docker image.
 
 ### Build
