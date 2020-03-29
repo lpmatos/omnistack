@@ -52,7 +52,7 @@
 <h1 align="center">Be The Hero</h1>
 
 <p align="center">
-  <strong>Projetos de Backend, Frontend e Mobile realizados durante a Semana Omnistack 11.0, incluindo customizações pessoais.</strong>
+  <strong>Backend, Frontend and Mobile - Omnistack 11.0 Week - including personal customizations.</strong>
 </p>
 
 <p align="center">
@@ -76,7 +76,7 @@ Pull requests are welcome. If you'd like to support the work and buy me a ☕, I
 
 ## 🚀 Built with
 
-Esse projeto foi desenvolvido com as seguintes tecnologias:
+This project was developed with:
 
 - [NodeJS](https://nodejs.org/en/)
 - [React](https://reactjs.org)
@@ -88,7 +88,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 ## 💻 Project
 
-O **Be The Hero** é um projeto que visa conectar pessoas interessadas em ajudar ongs e ongs com campanhas abertas.
+**Be The Hero** is a project that aims to connect people interested in helping ONG's.
 
 ## 🔖 Layout
 
