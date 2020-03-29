@@ -29,7 +29,7 @@
   </a>
 
   <a href="https://github.com/lpmatos/omnistack/commits/master">
-    <img alt="GitHub Last Commit" src="https://img.shields.io/github/last-commit/lpmatos/semana-omnistack-10">
+    <img alt="GitHub Last Commit" src="https://img.shields.io/github/last-commit/lpmatos/omnistack">
   </a>
 
   <a href="https://github.com/lpmatos/omnistack">
