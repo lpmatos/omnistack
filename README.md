@@ -3,7 +3,7 @@
 </h1>
 
 <h4 align="center">
-  🚀 Semana OmniStack 11.0
+  🚀 Semana OmniStack 11.0 🚀
 </h4>
 
 <p align="center">
@@ -49,7 +49,7 @@
   <img src="/docs/images/INFO.jpg" width="500px" float="center"/>
 </p>
 
-<h1 align="center">🚀 RocketSeat 🚀</h1>
+<h1 align="center">Be The Hero</h1>
 
 <p align="center">
   <strong>Projetos de Backend, Frontend e Mobile realizados durante a semana Omnistack</strong>
