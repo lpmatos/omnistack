@@ -334,6 +334,7 @@ Hey!! If you like this project or if you find some bugs feel free to contact me 
 ## 📆 Pomodoro Tasks
 
 - [x] Adding MySQL in docker-compose.
+- [x] In frontend we need custom alerts with react-alert.
 - Create Helm Chart to this application - Backend + Frontend + MySQL.
 - Customiza the Helm Chart with tests in MySQL.
 - Get environment variables from NodeJS.
