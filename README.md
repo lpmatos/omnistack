@@ -52,21 +52,21 @@
 <h1 align="center">Be The Hero</h1>
 
 <p align="center">
-  <strong>Projetos de Backend, Frontend e Mobile realizados durante a Semana Omnistack 11.0, incluindo customizações pessoais</strong>
+  <strong>Projetos de Backend, Frontend e Mobile realizados durante a Semana Omnistack 11.0, incluindo customizações pessoais.</strong>
 </p>
 
 <p align="center">
-  <a href="#rocket-built-with">Technology</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-projeto">Project</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#built-with">Technology</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#projeto">Project</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#how-to-contribute">How to contribute</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#license">License</a>
 </p>
 
-## Copyright (c)
+## Copyright ©️
 
 Lucca Pessoa da Silva Matos (c) 2020 - **GitHub Repository**
 
-## Getting Started
+## ▶️ Getting Started
 
 To use this repository you need to make a **git clone**:
 
@@ -78,11 +78,29 @@ Pull requests are welcome. If you'd like to support the work and buy me a ☕, I
 
 <a href="https://www.buymeacoffee.com/EatdMck" target="_blank"><img src="https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png" alt="Buy Me A Coffee" style="height: 41px !important;width: 100px !important;box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;-webkit-box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;" ></a>
 
-## 💻 Projeto
+## 🚀 Built with
+
+Esse projeto foi desenvolvido com as seguintes tecnologias:
+
+- [NodeJS](https://nodejs.org/en/)
+- [React](https://reactjs.org)
+- [React Native](https://facebook.github.io/react-native/)
+- [Expo](https://expo.io/)
+- [Docker](https://docs.docker.com/)
+- [Docker Compose](https://docs.docker.com/compose/)
+- [Helm](https://helm.sh/)
+
+## 💻 Project
 
 O **Be The Hero** é um projeto que visa conectar pessoas interessadas em ajudar ongs e ongs com campanhas abertas.
 
-## Pre-Requisites
+## 🔖 Layout
+
+Você pode baixar o layout do projeto no formato `.sketch` através [desse link](.github/DevRadar.sketch).
+
+Para abrir o arquivo no formato `.sketch` em qualquer sistema operacional utilize a ferramenta [Figma](https://figma.com).
+
+## 📰 Pre-Requisites
 
 **Tools**
 :---:
@@ -94,7 +112,16 @@ O **Be The Hero** é um projeto que visa conectar pessoas interessadas em ajudar
 **Docker**
 **docker-compose**
 
-## O que você vai aprender?
+Extras:
+
+- Main Libs
+  - [Express](https://expressjs.com/pt-br/)
+  - [KnexJS](http://knexjs.org/)
+- Estilos
+  - [EditorConfig](https://editorconfig.org/)
+  - [ESLint](https://eslint.org/)
+
+## ✏️ What will you learn?
 
 ![Alt text](docs/images/WALLPAPER.jpg?raw=true "Project")
 
@@ -106,11 +133,11 @@ Essa é uma oportunidade de descobrir novas ferramentas e conceitos essenciais, 
 
 Mais do que isso, esse é um evento para toda a comunidade evoluir junta.
 
-## Arquitetura
+## 📏 Architecture
 
 ![Alt text](docs/images/TWO.PNG?raw=true "Project")
 
-## Desenvolvimento sem Docker
+## 🐋 Development without Docker
 
 ### Usage
 
@@ -144,7 +171,7 @@ npm run build
 
 Will be create folder /build with the files. Inserts into HTTP server. [More information](https://create-react-app.dev/docs/deployment/)
 
-## Desenvolvimento com Docker
+## 🐋 Development with Docker
 
 Steps to build the Docker image.
 
@@ -218,29 +245,7 @@ docker volume prune -f
 docker network prune -f
 ```
 
-## :rocket: Built with - Technologies
-
-Esse projeto foi desenvolvido com as seguintes tecnologias:
-
-- [NodeJS](https://nodejs.org/en/)
-- [React](https://reactjs.org)
-- [React Native](https://facebook.github.io/react-native/)
-- [Expo](https://expo.io/)
-- [Docker](https://docs.docker.com/)
-- [Docker Compose](https://docs.docker.com/compose/)
-
-Extras:
-
-- Main Libs
-  - [Express](https://expressjs.com/pt-br/)
-  - [KnexJS](http://knexjs.org/)
-  - [Toast Notification](https://github.com/jossmac/react-toast-notifications)
-- Estilos
-  - [EditorConfig](https://editorconfig.org/)
-  - [ESLint](https://eslint.org/)
-  - [Prettier](https://prettier.io/)
-
-## How to contribute
+## 🎒 How to contribute
 
 1. Make a **Fork**.
 
@@ -256,7 +261,7 @@ Extras:
 
 Remember: There is no bad code, there are different views/versions of solving the same problem. 😊
 
-## Add to git and push
+## 🔔 Add to git and push
 
 You must send the project to your GitHub after the modifications
 
@@ -266,15 +271,15 @@ git commit -m "Added - Fixing somethings"
 git push origin master
 ```
 
-## Versioning
+## 📋 Versioning
 
 - [CHANGELOG](CHANGELOG.md)
 
-## License
+## 📜 License
 
 Distributed under the MIT License. See [LICENSE](LICENSE) for more information.
 
-## Contacts
+## ☎️ Contacts
 
 Hey!! If you like this project or if you find some bugs feel free to contact me in my channels:
 
@@ -284,7 +289,7 @@ Hey!! If you like this project or if you find some bugs feel free to contact me 
 [![Facebook](https://github.frapsoft.com/social/facebook.png)](https://www.facebook.com/lucca.pessoa.9)
 [![Github](https://github.frapsoft.com/social/github.png)](https://github.com/lpmatos)
 
-## Contributors ✨
+## ✨ Contributors
 
 <table>
   <tr>
@@ -292,7 +297,7 @@ Hey!! If you like this project or if you find some bugs feel free to contact me 
   <tr>
 </table>
 
-## Autor
+## 🐯 Autor
 
 <table>
   <tr>
@@ -300,18 +305,18 @@ Hey!! If you like this project or if you find some bugs feel free to contact me 
   <tr>
 </table>
 
-## Pomodoro Tasks
+## 📆 Pomodoro Tasks
 
 - [] Create Helm Chart to this application - Backend + Frontend + MySQL.
 - [] Customiza the Helm Chart with tests in MySQL.
 - [] Get environment variables from NodeJS.
 - [] Implement simple pipeline in GitLab CI/DC.
 
-## Acknowledgment
+## ⚡️ Acknowledgment
 
 * 🚀 RocketSeat - Diego Fernandes.
 
-## Vscode Themes
+## 💻 Vscode Themes
 
 * Dracula.
 * Material Icon Theme.
@@ -322,4 +327,4 @@ Hey!! If you like this project or if you find some bugs feel free to contact me 
 
 ---
 
-Feito com ❤️ by **Rocketseat**
+Feito com ❤️ by **Lucca Pessoa** 
