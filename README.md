@@ -80,19 +80,19 @@ This project was developed with:
 
 * Dev Tools
 
-- [NodeJS](https://nodejs.org/en/)
-- [React](https://reactjs.org)
-- [React Native](https://facebook.github.io/react-native/)
-- [Expo](https://expo.io/)
-- [Docker](https://docs.docker.com/)
-- [Docker Compose](https://docs.docker.com/compose/)
+  - [NodeJS](https://nodejs.org/en/)
+  - [React](https://reactjs.org)
+  - [React Native](https://facebook.github.io/react-native/)
+  - [Expo](https://expo.io/)
+  - [Docker](https://docs.docker.com/)
+  - [Docker Compose](https://docs.docker.com/compose/)
 
 * Infra Tools
 
-- [Kubernetes](https://kubernetes.io/pt/)
-- [Helm](https://helm.sh/)
-- [Kubectl](https://kubernetes.io/docs/tasks/tools/install-kubectl/)
-- [GitLab-CI](https://docs.gitlab.com/ee/ci/)
+  - [Kubernetes](https://kubernetes.io/pt/)
+  - [Helm](https://helm.sh/)
+  - [Kubectl](https://kubernetes.io/docs/tasks/tools/install-kubectl/)
+  - [GitLab-CI](https://docs.gitlab.com/ee/ci/)
 
 ## 💻 Project
 
