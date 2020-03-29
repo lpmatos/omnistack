@@ -241,6 +241,22 @@ docker volume prune -f
 docker network prune -f
 ```
 
+For more information, access the [Docker](https://docs.docker.com/)
+
+## 🐋 Development with Docker Compose
+
+Steps to run this integration with docker-compose.
+
+```bash
+docker-compose up --build
+```
+
+Steps to down all services deployed by docker-compose.
+
+```bash
+docker-compose down
+```
+
 ## 🎒 How to contribute
 
 1. Make a **Fork**.
@@ -303,10 +319,11 @@ Hey!! If you like this project or if you find some bugs feel free to contact me 
 
 ## 📆 Pomodoro Tasks
 
-- [] Create Helm Chart to this application - Backend + Frontend + MySQL.
-- [] Customiza the Helm Chart with tests in MySQL.
-- [] Get environment variables from NodeJS.
-- [] Implement simple pipeline in GitLab CI/DC.
+- [x] Adding MySQL in docker-compose.
+- Create Helm Chart to this application - Backend + Frontend + MySQL.
+- Customiza the Helm Chart with tests in MySQL.
+- Get environment variables from NodeJS.
+- Implement simple pipeline in GitLab CI/DC.
 
 ## ⚡️ Acknowledgment
 

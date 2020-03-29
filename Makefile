@@ -15,8 +15,11 @@ DOCKER_CONTAINER_LIST:=$(shell docker ps -aq)
 # DOCKER
 # =============================================================================
 
-build:
-	docker image build --no-cache -t omnistack -f ${PATH_DOCKERFILE} ${CONTEXT_DOCKERFILE}
+build-back:
+	docker image build --no-cache -t omnistack-backend  -f ${PATH_DOCKERFILE} ${CONTEXT_DOCKERFILE}
+
+build-front:
+	docker image build --no-cache -t omnistack-frontend  -f ${PATH_DOCKERFILE} ${CONTEXT_DOCKERFILE}
 
 system:
 	docker system prune -af
