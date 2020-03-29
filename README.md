@@ -98,12 +98,6 @@ This project was developed with:
 
 **Be The Hero** is a project that aims to connect people interested in helping ONG's.
 
-## 🔖 Layout
-
-Você pode baixar o layout do projeto no formato `.sketch` através [desse link](.github/DevRadar.sketch).
-
-Para abrir o arquivo no formato `.sketch` em qualquer sistema operacional utilize a ferramenta [Figma](https://figma.com).
-
 ## 📰 Pre-Requisites
 
 **Tools**
