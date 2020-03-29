@@ -1,14 +1,17 @@
 <h1 align="center">
-    <img alt="Be The Hero" title="#be_the_hero" src="docs/images/BE_THE_GERO.svg" width="250px" />
+    <img alt="Be The Hero" title="#be_the_hero" src="docs/images/BE_THE_HERO.svg" width="250px" />
 </h1>
 
 <h4 align="center">
   🚀 Semana OmniStack 11.0
 </h4>
 
-[![Open Source](https://badges.frapsoft.com/os/v1/open-source.svg?v=102)](https://github.com/lpmatos/omnistack)
-
 <p align="center">
+
+  <a href="https://github.com/lpmatos/omnistack">
+    <img alt="Open Source" src="https://badges.frapsoft.com/os/v1/open-source.svg?v=102">
+  </a>
+
   <a href="https://github.com/lpmatos/omnistack/graphs/contributors">
     <img alt="GitHub Contributors" src="https://img.shields.io/github/contributors/lpmatos/omnistack">
   </a>
