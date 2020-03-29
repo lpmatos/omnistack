@@ -62,10 +62,6 @@
   <a href="#-license">License</a>
 </p>
 
-## Copyright ©️
-
-Lucca Pessoa da Silva Matos (c) 2020 - **GitHub Repository**
-
 ## ▶️ Getting Started
 
 To use this repository you need to make a **git clone**:
