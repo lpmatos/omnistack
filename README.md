@@ -1,12 +1,53 @@
-Semana Omnistack
-============
+<h1 align="center">
+    <img alt="Be The Hero" title="#be_the_hero" src="docs/images/BE_THE_GERO.svg" width="250px" />
+</h1>
 
-[![Open Source](https://badges.frapsoft.com/os/v1/open-source.svg?v=102)](https://github.com/lpmatos/omnistack) [![Contributors](https://img.shields.io/github/contributors/lpmatos/omnistack)](https://github.com/lpmatos/omnistack/graphs/contributors) [![MIT License](https://img.shields.io/github/license/lpmatos/omnistack)](https://github.com/lpmatos/omnistack/blob/master/LICENSE) [![Languages](https://img.shields.io/github/languages/count/lpmatos/omnistack)](https://github.com/lpmatos/omnistack) [![Top Language](https://img.shields.io/github/languages/top/lpmatos/omnistack)](https://github.com/lpmatos/omnistack) [![GitHub fork](https://img.shields.io/github/forks/lpmatos/omnistack?style=social)](https://github.com/lpmatos/omnistack/network/members) [![GitHub stars](https://img.shields.io/github/stars/lpmatos/omnistack?style=social)](https://github.com/lpmatos/omnistack/stargazers) [![GitHub watchers](https://img.shields.io/github/watchers/lpmatos/omnistack?style=social)](https://github.com/lpmatos/omnistack/watchers)
+<h4 align="center">
+  🚀 Semana OmniStack 11.0
+</h4>
+
+[![Open Source](https://badges.frapsoft.com/os/v1/open-source.svg?v=102)](https://github.com/lpmatos/omnistack)
+
+<p align="center">
+  <a href="https://github.com/lpmatos/omnistack/graphs/contributors">
+    <img alt="GitHub Contributors" src="https://img.shields.io/github/contributors/lpmatos/omnistack">
+  </a>
+  
+  <a href="https://github.com/lpmatos/omnistack">
+    <img alt="GitHub Language Count" src="https://img.shields.io/github/languages/count/lpmatos/omnistack">
+  </a>
+
+  <a href="https://github.com/lpmatos/omnistack">
+    <img alt="GitHub Top Language" src="https://img.shields.io/github/languages/top/lpmatos/omnistack">
+  </a>
+
+  <a href="https://github.com/lpmatos/omnistack/stargazers">
+    <img alt="GitHub Stars" src="https://img.shields.io/github/stars/lpmatos/omnistack?style=social">
+  </a>
+
+  <a href="https://github.com/lpmatos/omnistack/commits/master">
+    <img alt="GitHub Last Commit" src="https://img.shields.io/github/last-commit/lpmatos/semana-omnistack-10">
+  </a>
+
+  <a href="https://github.com/lpmatos/omnistack">
+    <img alt="Repository Size" src="https://img.shields.io/github/repo-size/lpmatos/omnistack">
+  </a>
+
+  <a href="https://github.com/lpmatos/omnistack/issues">
+    <img alt="Repository Issues" src="https://img.shields.io/github/issues/lpmatos/semana-omnistack-10">
+  </a>
+
+  <a href="https://github.com/lpmatos/omnistack/blob/master/LICENSE">
+    <img alt="MIT License" src="https://img.shields.io/github/license/lpmatos/omnistack">
+  </a>
+</p>
 
 <p align="center">
   <img src="/docs/images/INFO.jpg" width="500px" float="center"/>
 </p>
+
 <h1 align="center">🚀 RocketSeat 🚀</h1>
+
 <p align="center">
   <strong>Projetos de Backend, Frontend e Mobile realizados durante a semana Omnistack</strong>
 </p>
