@@ -259,6 +259,10 @@ Steps to down all services deployed by docker-compose.
 docker-compose down
 ```
 
+## Kubernets
+
+![Alt text](docs/images/KUBERNETES.png?raw=true "Kubernetes")
+
 ## 🎒 How to contribute
 
 1. Make a **Fork**.
