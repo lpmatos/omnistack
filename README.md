@@ -52,7 +52,7 @@
 <h1 align="center">Be The Hero</h1>
 
 <p align="center">
-  <strong>Projetos de Backend, Frontend e Mobile realizados durante a semana Omnistack</strong>
+  <strong>Projetos de Backend, Frontend e Mobile realizados durante a Semana Omnistack 11.0, incluindo customizações pessoais</strong>
 </p>
 
 <p align="center">
