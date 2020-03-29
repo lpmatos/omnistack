@@ -78,13 +78,21 @@ Pull requests are welcome. If you'd like to support the work and buy me a ☕, I
 
 This project was developed with:
 
+* Dev Tools
+
 - [NodeJS](https://nodejs.org/en/)
 - [React](https://reactjs.org)
 - [React Native](https://facebook.github.io/react-native/)
 - [Expo](https://expo.io/)
 - [Docker](https://docs.docker.com/)
 - [Docker Compose](https://docs.docker.com/compose/)
+
+* Infra Tools
+
+- [Kubernetes](https://kubernetes.io/pt/)
 - [Helm](https://helm.sh/)
+- [Kubectl](https://kubernetes.io/docs/tasks/tools/install-kubectl/)
+- [GitLab-CI](https://docs.gitlab.com/ee/ci/)
 
 ## 💻 Project
 
@@ -262,6 +270,12 @@ docker-compose down
 ## Kubernets
 
 ![Alt text](docs/images/KUBERNETES.png?raw=true "Kubernetes")
+
+## Kubectl
+
+Kubectl is a command line tool for controlling Kubernetes clusters. kubectl looks for a file named config in the $HOME/.kube directory.
+
+For more information, access the [Kubectl](https://kubernetes.io/docs/tasks/tools/install-kubectl/). In this [Project](/docs/annotations/kubectl.md) we have a list of usually commands used to get some informations about the Cluster and your resources with kubectl.
 
 ## 🎒 How to contribute
 
